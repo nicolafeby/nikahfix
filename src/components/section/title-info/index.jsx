@@ -17,7 +17,7 @@ export default function TitleInfo() {
         <span className="bg-[#4D4D4D] text-white text-xs px-1 py-0 mr-2 rounded-sm">
           Explict
         </span>
-        <span className="text-white mr-2">2024</span>
+        <span className="text-white mr-2">2025</span>
         <span className="text-white mr-2">1h 26m</span>
         <span>
           <img src="/images/4k-icon.png" width={16} height={16} alt="4k" />
@@ -27,13 +27,13 @@ export default function TitleInfo() {
         </span>
       </div>
       <div className="bg-[#E50913] py-1 px-2 rounded text-xs text-white font-bold w-fit">
-        Coming soon on Sunday, 17 Agustus 2025
+        Coming soon on Wednesday, 25 Juni 2025
       </div>
       <div className="pt-2">
         <p className="text-white text-sm leading-[1.15rem] mb-2">
-          Setelah Aku dan Kamu dipertemukan dalam situasi yang tepat, di mana
-          keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di
-          awal perjalanan baru menuju pernikahan.
+          Aku dan Kamu akhirnya dipertemukan di waktu yang paling sempurna, bukan karena kebetulan, 
+          tapi karena cinta tahu kapan harus datang. Dan sejak itu, 
+          kita memulai perjalanan menuju masa depan yang kita impikan: menjadi satu dalam pernikahan.
         </p>
         <p className="font-bold text-[#AFADA9] text-[10px] leading-[1rem]">
           "Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat

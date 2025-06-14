@@ -14,9 +14,9 @@ export default function Bridegroom() {
             height={164}
           />
           <div>
-            <h4 className="text-sm text-white font-medium mt-2">Doremon</h4>
+            <h4 className="text-sm text-white font-medium mt-2">Muhammad Nicola Feby Salvaturi</h4>
             <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
-              Putra dari Doraemon &amp; Doraemon
+              Putra dari Bapak Badri &amp; Ibu Marjinah
             </p>
           </div>
         </div>
@@ -27,9 +27,9 @@ export default function Bridegroom() {
             height={164}
           />
           <div>
-            <h4 className="text-sm text-white font-medium mt-2">Doraemoncewe</h4>
+            <h4 className="text-sm text-white font-medium mt-2">Anita Dwi Ristanti</h4>
             <p className="text-[#A3A1A1] text-xs leading-4 mt-2">
-              Putri dari Doraemon &amp; Doraemon
+              Putri dari Bapak Atim Raharjo (Alm) &amp; Ibu Mukaromah
             </p>
           </div>
         </div>
