@@ -26,10 +26,10 @@ export default function Footer() {
             className="underline"
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/Icanskk9"
+            href="https://github.com/nicolafeby"
             
           >
-            &nbsp;Rewriter Muhammad Ichsan Nurzaman
+            &nbsp;Rewriter Muhammad Nicola Feby Salvaturi
             
           </a>
         </p>
