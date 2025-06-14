@@ -9,7 +9,7 @@ export default function Bridegroom() {
       <div className="grid grid-cols-2 gap-5">
         <div>
           <img
-            src="images/Doraemon.png"
+            src="images/nicola.JPG"
             className="w-full rounded-md"
             height={164}
           />
@@ -22,7 +22,7 @@ export default function Bridegroom() {
         </div>
         <div>
           <img
-            src="images/Doraemon.png"
+            src="images/anita.JPG"
             className="full rounded-md"
             height={164}
           />

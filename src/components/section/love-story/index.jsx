@@ -35,10 +35,11 @@ export default function LoveStory() {
       </h2>
       <div className="space-y-4">
         <LoveItem
-          imageUrl="images/dummy.png"
+          imageUrl="images/foto_sma.JPG"
           title="Episode 1: How We Met Each Other that Time"
           duration="26m 10s"
-          description="Aku dan Kamu pertama kali bertemu sebagai rekan kerja di kantor yang sama. Kegiatan-kegiatan kecil kantor yang sering melibatkan orang-orang didala..."
+          description="Nicola dan Anita pertama kali bertemu di SMA, saat Nicola dan Anita adalah teman satu kelas di SMAN 1 Ngimbang. 
+          Sejak saat itu, mereka mulai saling mengenal dan menjalin persahabatan yang erat."
         />
         <LoveItem
           imageUrl="images/dummy.png"
