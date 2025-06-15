@@ -4,7 +4,7 @@
 
 ## Demo
 
-Anda dapat melihat demo langsung dari NIKAHFIX di sini: [NIKAHFIX - Demo](https://www.nikahfixyuk.web.id/)/)
+Anda dapat melihat demo langsung dari NIKAHFIX di sini: [NIKAHFIX - Demo](https://nikahfix.nicolaboard.my.id)
 
 ## Teknologi yang Digunakan
 

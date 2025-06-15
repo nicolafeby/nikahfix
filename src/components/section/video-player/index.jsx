@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 export default function VideoPlayer() {
   const videoRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(false); // Start with unmuted
+  const [isMuted, setIsMuted] = useState(false); // Start unmuted
 
   useEffect(() => {
-    // Set initial muted state when video ref is ready
     if (videoRef.current) {
       videoRef.current.muted = isMuted;
     }
@@ -52,7 +51,6 @@ export default function VideoPlayer() {
           className="absolute top-5 right-6 p-2 bg-transparent border border-white border-opacity-50 rounded-full text-gray-200 hover:bg-opacity-20 hover:bg-gray-400 focus:outline-none"
         >
           {isMuted ? (
-            // Icon volume-x
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,7 +64,6 @@ export default function VideoPlayer() {
               <line x1="16" y1="9" x2="22" y2="15" />
             </svg>
           ) : (
-            // Icon volume-2
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
