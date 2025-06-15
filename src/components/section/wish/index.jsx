@@ -60,22 +60,30 @@ export default function WishSection() {
         Wish for the couple
       </h2>
       <div className="h-[20rem] overflow-auto space-y-4">
-        {wishes.map((wish) => (
-          <div key={wish.id} className="flex gap-2">
-            <img
-              width={24}
-              height={24}
-              src="images/face.png"
-              className="bg-[#48cae4] rounded-sm"
-              alt="face"
-            />
-            <div>
-              <p className="text-white text-md -mt-1">{wish.name}</p>
-              <p className="text-xs text-[#A3A1A1]">{wish.message}</p>
+        {wishes.map((wish, index) => {
+          const icons = [
+            "guest-icon.png",
+            "guest-icon-green.png",
+            "guest-icon-yellow.png",
+          ];
+          const iconSrc = `images/${icons[index % icons.length]}`;
+
+          return (
+            <div key={wish.id} className="flex gap-2 items-start">
+              <img
+                src={iconSrc}
+                alt="guest-icon"
+                className="w-6 h-6 bg-[#48cae4] rounded-[4px] object-cover"
+              />
+              <div>
+                <p className="text-white text-md -mt-1">{wish.name}</p>
+                <p className="text-xs text-[#A3A1A1]">{wish.message}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
+
       <form onSubmit={handleSubmit} className="mt-4 space-y-4">
         <div className="space-y-1">
           <label className="text-white">Name</label>
