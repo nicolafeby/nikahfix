@@ -96,7 +96,7 @@ export default function DetailInfo() {
       <LoveStory />
 
       {/* Our Forever Date Section */}
-      <section className="mb-8 px-4 md:px-0 text-sm">
+      <section className="mb-8 text-sm">
         <h2 className="text-base leading-5 text-white font-semibold mb-3">
           Place and Date
         </h2>
@@ -141,7 +141,7 @@ export default function DetailInfo() {
                   <h3 className="text-sm font-medium">Schedule</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <a
-                      href="https://maps.app.goo.gl/ThRS4vjKZpMGYvik8" // ganti dengan link maps Masjid Namira
+                      href="https://maps.app.goo.gl/ThRS4vjKZpMGYvik8"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
