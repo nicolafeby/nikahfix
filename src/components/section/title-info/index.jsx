@@ -9,9 +9,9 @@ export default function TitleInfo() {
           DOCUMENTER
         </span>
       </div>
-      <h2 className="text-lg leading-5 text-white font-bold">
+      {/* <h2 className="text-lg leading-5 text-white font-bold">
         Nicola &amp; Anita : Hari Pernikahan Kita
-      </h2>
+      </h2> */}
       <div className="flex gap-1 items-center">
         <span className="text-green-500 mr-2">100% match</span>
         <span className="bg-[#4D4D4D] text-white text-xs px-1 py-0 mr-2 rounded-sm">

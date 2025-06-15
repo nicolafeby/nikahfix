@@ -27,8 +27,8 @@ export default function Thumbnail() {
           />
           <div>
             <h1 className="font-bold text-3xl leading-none">
-              Dora & Emon: <br />
-              Sebelum Bertemu
+              Nicola & Anita: <br />
+              Hari Pernikahan Kita
             </h1>
           </div>
           <div>
@@ -36,7 +36,7 @@ export default function Thumbnail() {
               <span className="bg-[#E50913] text-xs text-white rounded-md px-2 py-1">
                 Coming Soon
               </span>
-              <p className="text-sm">17 Agustus 2025</p>
+              <p className="text-sm">25 Juni 2025</p>
             </div>
           </div>
           <div>
