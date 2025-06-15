@@ -11,7 +11,7 @@ Anda dapat melihat demo langsung dari NIKAHFIX di sini: [NIKAHFIX - Demo](https:
 - **React**: Library JavaScript untuk membangun antarmuka pengguna.
 - **Vite**: Bundler modern untuk pengembangan aplikasi web cepat dengan konfigurasi minimal.
 - **TailwindCSS**: Untuk mendesain tampilan visual agar lebih menarik.
-- **Vercel**: Platform hosting yang digunakan untuk menyajikan demo.
+- **Firebase**: Platform yang digunakan untuk menyajikan fitur Wishes sections.
 
 ## Instalasi
 
@@ -20,7 +20,7 @@ Berikut adalah langkah-langkah untuk menginstal proyek ini di lingkungan lokal A
 1. **Clone Repository**:
 
    ```bash
-   git clone https://github.com/username/nIKAHFIX.git
+   git clone https://github.com/nicolafeby/nikahfix.git
    ```
 
 2. **Masuk ke Direktori Proyek**:
@@ -55,11 +55,3 @@ Berikut adalah langkah-langkah untuk menginstal proyek ini di lingkungan lokal A
 - `src/` - Berisi komponen utama, gaya, dan logika aplikasi.
 - `public/` - Berisi aset-aset statis, seperti gambar dan ikon.
 - `vite.config.js` - Konfigurasi untuk Vite bundler.
-
-## Kontribusi
-
-Jika Anda ingin berkontribusi pada proyek ini, silakan buat _pull request_ atau ajukan _issue_. Kami terbuka untuk saran dan perbaikan yang dapat meningkatkan NIKAHFIX.
-
----
-
-Selamat menggunakan NIKAHFIX untuk membuat undangan pernikahan digital yang unik dan modern!
