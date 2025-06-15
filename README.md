@@ -26,7 +26,7 @@ Berikut adalah langkah-langkah untuk menginstal proyek ini di lingkungan lokal A
 2. **Masuk ke Direktori Proyek**:
 
    ```bash
-   cd nIKAHFIX
+   cd nikahfix
    ```
 
 3. **Instal Dependensi**:
