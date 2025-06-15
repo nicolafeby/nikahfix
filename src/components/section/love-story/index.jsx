@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const LoveItem = ({ imageUrl, title, duration, description }) => {
   return (
@@ -9,7 +9,7 @@ const LoveItem = ({ imageUrl, title, duration, description }) => {
             className="w-full rounded-md object-cover"
             height={100}
             style={{
-              maxHeight: '100px',
+              maxHeight: "100px",
             }}
             src={imageUrl}
             alt="dummy"
@@ -38,20 +38,26 @@ export default function LoveStory() {
           imageUrl="images/foto_sma.JPG"
           title="Episode 1: How We Met Each Other that Time"
           duration="26m 10s"
-          description="Nicola dan Anita pertama kali bertemu di SMA, saat Nicola dan Anita adalah teman satu kelas di SMAN 1 Ngimbang. 
+          description="Nicola dan Anita pertama kali bertemu di SMA, saat Nicola dan Anita adalah teman satu kelas semasa kelas 3 SMA. 
           Sejak saat itu, mereka mulai saling mengenal dan menjalin persahabatan yang erat."
         />
         <LoveItem
-          imageUrl="images/dummy.png"
-          title="Episode 1: How We Met Each Other that Time"
+          imageUrl="images/malang.jpg"
+          title="Episode 2: A Love That Grows With Time"
           duration="26m 10s"
-          description="Aku dan Kamu pertama kali bertemu sebagai rekan kerja di kantor yang sama. Kegiatan-kegiatan kecil kantor yang sering melibatkan orang-orang didala..."
+          description="Setelah lulus SMA, Nicola dan Anita harus berpisah karena Nicola melanjutkan kuliah di Bandung, sementara Anita melanjutkan kuliah di Surabaya."
         />
         <LoveItem
-          imageUrl="images/dummy.png"
-          title="Episode 1: How We Met Each Other that Time"
+          imageUrl="images/lamaran.jpg"
+          title="Episode 3: Choose to Spend Life Together"
           duration="26m 10s"
-          description="Aku dan Kamu pertama kali bertemu sebagai rekan kerja di kantor yang sama. Kegiatan-kegiatan kecil kantor yang sering melibatkan orang-orang didala..."
+          description="Seiring berjalannya waktu tak terasa hubungan sudah berjalan selama 7 tahun. Tepat pada bulan Desember 2024, Nicola memutuskan untuk melamar Anita"
+        />
+        <LoveItem
+          imageUrl="images/final-episode.png"
+          title="[Coming Soon] Final Episode: The Beginning of Forever"
+          duration="26m 10s"
+          description="Ketika hari H itu datang, Nicola dan Anita akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
         />
       </div>
     </div>
