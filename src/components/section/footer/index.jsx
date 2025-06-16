@@ -4,12 +4,14 @@ export default function Footer() {
   return (
     <div>
       <div className="mt-8 flex flex-col items-center">
-        <p className="font-bold text-white text-sm">
-          Thank you for checking up all the things up there!
+        <p className="font-bold text-white text-sm">Terimakasih</p>
+        {/* <p className="font-serif font-bold text-white text-2xl">Terimakasih</p> */}
+
+        <p className="font-serif italic text-white text-sm">
+          Kami Yang Berbahagia
         </p>
-        <p className="font-bold text-white text-sm">
-          Can’t wait to see u again! 🤍
-        </p>
+
+        <p className="text-white text-sm">Kedua Mempelai & Keluarga Besar 🤍</p>
       </div>
 
       <div className="mt-8 flex flex-col items-center">
