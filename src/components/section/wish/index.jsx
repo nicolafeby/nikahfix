@@ -135,7 +135,7 @@ export default function WishSection() {
                     <span className="font-semibold">BCA</span> - 5855264789
                   </p>
                 </div>
-                <div>—</div>
+
                 <div>
                   <p className="font-semibold">Anita Dwi Ristanti</p>
                   <p>
@@ -143,7 +143,7 @@ export default function WishSection() {
                     1420015887374
                   </p>
                 </div>
-                <div>—</div>
+
                 <div>
                   <p>
                     <span className="font-semibold">Gift:</span> Balong,
