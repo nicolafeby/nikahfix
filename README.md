@@ -1,10 +1,10 @@
 # NIKAHFIX
 
-**NIKAHFIX** adalah sebuah website undangan pernikahan yang terinspirasi dari tampilan _Netflix_, yang memberikan pengalaman visual menarik dan modern untuk pengguna. Proyek ini dibuat menggunakan **React** dengan bundler **Vite**, dan dirancang agar mudah diakses, responsif, serta estetis.
+**NIKAHFIX** merupakan platform undangan pernikahan digital yang mengadopsi gaya visual khas Netflix, menghadirkan pengalaman tampilan yang modern dan menarik bagi para pengguna. Website ini dikembangkan menggunakan React dengan Vite sebagai bundler-nya, dirancang untuk tampil responsif, mudah diakses, dan memiliki estetika yang elegan.
 
 ## Demo
 
-Anda dapat melihat demo langsung dari NIKAHFIX di sini: [NIKAHFIX - Demo](https://nikahfix.nicolaboard.my.id)
+Anda dapat melihat demo langsung dari NIKAHFIX di sini: [NIKAHFIX](https://nikahfix.nicolaboard.my.id)
 
 ## Teknologi yang Digunakan
 
