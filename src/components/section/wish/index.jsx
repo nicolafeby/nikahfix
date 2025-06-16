@@ -89,14 +89,13 @@ export default function WishSection() {
 
       {showBottomSheet && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 backdrop-blur-sm">
-          <div className="bg-zinc-900 w-full max-w-md rounded-t-2xl p-5 transition-transform duration-300 animate-slide-up max-h-[90vh] overflow-y-auto border border-zinc-700 relative">
-            {/* Tombol Close Icon (kanan atas) */}
+          <div className="bg-zinc-900 w-full max-w-md rounded-t-2xl p-5 border border-zinc-700 relative overflow-hidden">
+            {/* Tombol Close Icon */}
             <button
               onClick={() => setShowBottomSheet(false)}
               className="absolute top-4 right-4 text-zinc-400 hover:text-white"
               aria-label="Close"
             >
-              {/* Icon X (Lucide or SVG) */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -113,13 +112,12 @@ export default function WishSection() {
               </svg>
             </button>
 
-            {/* Wedding Gift Section */}
-            <section className="mb-8 text-sm text-white mt-8">
+            <section className="text-sm text-white mt-12 mb-4">
               <h2 className="text-base leading-5 font-semibold mb-3">
                 Wedding Gift
               </h2>
 
-              <div className="text-[#AFADA9] text-sm leading-[1.15rem] mb-4">
+              <div className="text-[#AFADA9] leading-[1.15rem] mb-4">
                 <p>
                   Doa restu dari Bapak/Ibu/Saudara/i merupakan hadiah terindah
                   bagi kami. Namun apabila Bapak/Ibu/Saudara/i berkenan
@@ -128,7 +126,7 @@ export default function WishSection() {
                 </p>
               </div>
 
-              <div className="text-center text-white text-sm space-y-3 mt-6">
+              <div className="text-center space-y-3 mb-6">
                 <div>
                   <p className="font-semibold">
                     Muhammad Nicola Feby Salvaturi
@@ -154,21 +152,20 @@ export default function WishSection() {
                 </div>
               </div>
 
-              <div className="relative w-full overflow-hidden rounded-md mb-2 py-6 bg-zinc-800 flex flex-col items-center justify-center space-y-4 scale-50 origin-top">
+              {/* QRIS Container */}
+              <div className="bg-zinc-800 rounded-md px-4 py-5 flex flex-col items-center justify-center space-y-3">
                 <div className="text-center text-white">
-                  <p className="text-lg font-semibold leading-snug">
+                  <p className="text-base font-semibold leading-snug">
                     MUHAMMAD NICOLA <br /> FEBY SALVATURI
                   </p>
-                  <p className="text-base text-gray-400 mt-1">
-                    Scan QRIS Pembayaran
-                  </p>
+                  <p className="text-sm text-gray-400">Scan QRIS Pembayaran</p>
                 </div>
 
                 <img
                   alt="QRIS"
                   loading="lazy"
                   decoding="async"
-                  className="w-full max-w-xs h-auto rounded-md mt-4"
+                  className="w-full max-w-[180px] h-auto rounded-md"
                   src="/images/qris.png"
                   style={{ color: "transparent" }}
                 />
