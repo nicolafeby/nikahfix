@@ -1,5 +1,5 @@
-import React from 'react';
-import DetailInfo from '../detail-info';
+import React from "react";
+import DetailInfo from "../detail-info";
 
 const TagItem = ({ title }) => {
   return (

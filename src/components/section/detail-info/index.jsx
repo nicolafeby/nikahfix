@@ -179,46 +179,45 @@ export default function DetailInfo() {
 
       <OurGallery />
 
-      <section className="mb-8 text-sm">
-        <h2 className="text-base leading-5 text-white font-semibold mb-3">
-          Wedding Gift
-        </h2>
-
-        <div className="text-[#AFADA9] text-sm leading-[1.15rem] mb-4">
-          <p>
-            Doa restu dari Bapak/Ibu/Saudara/i merupakan hadiah terindah bagi
-            kami. Namun apabila Bapak/Ibu/Saudara/i berkenan memberikan tanda
-            kasih secara digital, kami telah menyediakan metode pembayaran
-            non-tunai di bawah ini.
-          </p>
-        </div>
-
-        <div className="relative w-full overflow-hidden rounded-md mb-2 py-6 bg-zinc-900 flex flex-col items-center justify-center space-y-4">
-          {/* Tulisan di atas gambar */}
-          <div className="text-center text-white">
-            <p className="text-lg font-semibold leading-snug">
-              MUHAMMAD NICOLA <br /> FEBY SALVATURI
-            </p>
-            <p className="text-base text-gray-400 mt-1">Scan QRIS Pembayaran</p>
-          </div>
-
-          {/* Gambar QRIS */}
-          <img
-            alt="QRIS"
-            loading="lazy"
-            decoding="async"
-            className="w-full max-w-xs h-auto rounded-md"
-            src="/images/qris.png"
-            style={{
-              color: "transparent",
-            }}
-          />
-        </div>
-      </section>
-
       <WishSection />
 
       <Footer />
     </div>
   );
 }
+
+// <section className="mb-8 text-sm">
+//   <h2 className="text-base leading-5 text-white font-semibold mb-3">
+//     Wedding Gift
+//   </h2>
+
+//   <div className="text-[#AFADA9] text-sm leading-[1.15rem] mb-4">
+//     <p>
+//       Doa restu dari Bapak/Ibu/Saudara/i merupakan hadiah terindah bagi kami.
+//       Namun apabila Bapak/Ibu/Saudara/i berkenan memberikan tanda kasih secara
+//       digital, kami telah menyediakan metode pembayaran non-tunai di bawah ini.
+//     </p>
+//   </div>
+
+//   <div className="relative w-full overflow-hidden rounded-md mb-2 py-6 bg-zinc-900 flex flex-col items-center justify-center space-y-4">
+//     {/* Tulisan di atas gambar */}
+//     <div className="text-center text-white">
+//       <p className="text-lg font-semibold leading-snug">
+//         MUHAMMAD NICOLA <br /> FEBY SALVATURI
+//       </p>
+//       <p className="text-base text-gray-400 mt-1">Scan QRIS Pembayaran</p>
+//     </div>
+
+//     {/* Gambar QRIS */}
+//     <img
+//       alt="QRIS"
+//       loading="lazy"
+//       decoding="async"
+//       className="w-full max-w-xs h-auto rounded-md"
+//       src="/images/qris.png"
+//       style={{
+//         color: "transparent",
+//       }}
+//     />
+//   </div>
+// </section>;
