@@ -68,7 +68,7 @@ export default function Thumbnail() {
             onClick={() => setIsOpenDetail(true)}
             className="uppercase w-full text-xl font-semibold"
           >
-            See The Detail
+            Lihat Selengkapnya
           </button>
         </div>
       </div>

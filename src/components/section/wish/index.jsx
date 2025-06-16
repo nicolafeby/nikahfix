@@ -58,7 +58,7 @@ export default function WishSection() {
       {/* Header dan Tombol Info */}
       <div className="flex items-center  mb-4">
         <h2 className="text-lg leading-5 text-white font-bold">
-          Wish for the couple
+          Wish for the Couple
         </h2>
       </div>
 

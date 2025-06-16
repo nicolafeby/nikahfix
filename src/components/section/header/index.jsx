@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 
-export default function VideoPlayer() {
+export default function Header() {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(false); // Start unmuted
 
@@ -33,7 +33,6 @@ export default function VideoPlayer() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay Text */}
         <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
           <h1 className="text-xl font-bold mb-2">
             Nicola &amp; Anita:
@@ -45,7 +44,6 @@ export default function VideoPlayer() {
           </p>
         </div>
 
-        {/* Mute/Unmute Button */}
         <button
           onClick={toggleMute}
           className="absolute top-5 right-6 p-2 bg-transparent border border-white border-opacity-50 rounded-full text-gray-200 hover:bg-opacity-20 hover:bg-gray-400 focus:outline-none"
