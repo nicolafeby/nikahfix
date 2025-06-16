@@ -17,14 +17,14 @@ export default function OurGallery() {
         Our Gallery
       </h2>
       <div className="grid grid-cols-3 gap-4">
-        <GalleryItem src="/images/DSC_2570.JPG" />
-        <GalleryItem src="/images/DSC_2599.JPG" />
+        <GalleryItem src="/images/DSC_2570.jpg" />
+        <GalleryItem src="/images/DSC_2599.jpg" />
         <GalleryItem src="/images/DSC_2681.jpg" />
         <GalleryItem src="/images/DSC_2867.jpg" />
-        <GalleryItem src="/images/DSC_2886.JPG" />
-        <GalleryItem src="/images/DSC_2919.JPG" />
+        <GalleryItem src="/images/DSC_2886.jpg" />
+        <GalleryItem src="/images/DSC_2919.jpg" />
         <GalleryItem src="/images/DSC_2977.jpg" />
-        <GalleryItem src="/images/DSC_3090.JPG" />
+        <GalleryItem src="/images/DSC_3090.jpg" />
         <GalleryItem src="/images/DSC_3160.jpg" />
       </div>
     </div>
