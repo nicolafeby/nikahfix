@@ -48,7 +48,7 @@ export default function LoveStory() {
           description="Setelah lulus SMA, Nicola dan Anita harus berpisah karena Nicola melanjutkan kuliah di Bandung, sementara Anita melanjutkan kuliah di Surabaya."
         />
         <LoveItem
-          imageUrl="images/lamaran.jpg"
+          imageUrl="images/lamaran.png"
           title="Episode 3: Choose to Spend Life Together"
           duration="26m 10s"
           description="Seiring berjalannya waktu tak terasa hubungan sudah berjalan selama 7 tahun. Tepat pada bulan Desember 2024, Nicola memutuskan untuk melamar Anita"
