@@ -186,9 +186,10 @@ export default function DetailInfo() {
 
         <div className="text-[#AFADA9] text-sm leading-[1.15rem] mb-4">
           <p>
-            Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan
-            jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi
-            kado secara cashless.
+            Doa restu dari Bapak/Ibu/Saudara/i merupakan hadiah terindah bagi
+            kami. Namun apabila Bapak/Ibu/Saudara/i berkenan memberikan tanda
+            kasih secara digital, kami telah menyediakan metode pembayaran
+            non-tunai di bawah ini.
           </p>
         </div>
 
