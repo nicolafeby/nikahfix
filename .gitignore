@@ -25,4 +25,7 @@ dist-ssr
 
 # Ignore config file
 .env
+# Ignore config file
+src/firebase/config.js
+
 
