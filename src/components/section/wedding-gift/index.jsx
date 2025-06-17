@@ -82,7 +82,7 @@ export default function WeddingGiftSection() {
                   <p className="text-base font-semibold leading-snug">
                     MUHAMMAD NICOLA <br /> FEBY SALVATURI
                   </p>
-                  <p className="text-sm text-gray-400">Scan QRIS Transfer</p>
+                  <p className="text-sm text-gray-400">Scan QRIS Merchant</p>
                 </div>
 
                 <img
