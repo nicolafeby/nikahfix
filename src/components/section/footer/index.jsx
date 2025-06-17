@@ -18,7 +18,7 @@ export default function Footer() {
             className="underline"
             target="_blank"
             rel="noreferrer"
-            href="https://www.instagram.com/nicolaafebyy/"
+            href="https://www.linkedin.com/in/nicola-feby/"
           >
             Muhammad Nicola Feby Salvaturi
           </a>
