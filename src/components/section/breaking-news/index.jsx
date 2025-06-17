@@ -10,7 +10,7 @@ export default function BreakingNews() {
       </h2>
 
       <img
-        className="w-full rounded-md cursor-pointer hover:scale-105 transition-transform duration-200"
+        className="w-full rounded-md cursor-pointer transition-transform duration-200"
         height={300}
         src="images/together.jpg"
         onClick={() => setShowPreview(true)}

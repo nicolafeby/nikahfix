@@ -12,7 +12,7 @@ export default function Bridegroom() {
         <div>
           <img
             src="images/nicola.jpg"
-            className="w-full rounded-md cursor-pointer hover:scale-105 transition-transform duration-200"
+            className="w-full rounded-md cursor-pointer transition-transform duration-200"
             height={164}
             onClick={() => setSelectedImage("images/nicola.jpg")}
             alt="Muhammad Nicola Feby Salvaturi"
@@ -30,7 +30,7 @@ export default function Bridegroom() {
         <div>
           <img
             src="images/anita.jpg"
-            className="w-full rounded-md cursor-pointer hover:scale-105 transition-transform duration-200"
+            className="w-full rounded-md cursor-pointer transition-transform duration-200"
             height={164}
             onClick={() => setSelectedImage("images/anita.jpg")}
             alt="Anita Dwi Ristanti"
