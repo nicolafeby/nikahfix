@@ -26,6 +26,7 @@ fi
 echo "📦 Running new container..."
 docker run -d \
   --name $CONTAINER_NAME \
+  --restart unless-stopped \
   -p $PORT:80 \
   -v $SOURCE_DIR:/usr/share/nginx/html:ro \
   nginx
