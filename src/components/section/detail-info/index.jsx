@@ -1,4 +1,3 @@
-import React, { useRef, useState, useEffect } from "react";
 import TitleInfo from "../title-info";
 import BreakingNews from "../breaking-news";
 import Bridegroom from "../bride-groom";
@@ -9,25 +8,10 @@ import Footer from "../footer";
 import WeddingGiftSection from "../wedding-gift";
 import Header from "../header";
 import OurDate from "../our-date/our-date";
+import { useConfig } from "../../../context/ConfigContext";
 
 export default function DetailInfo() {
-  const videoRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(false);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.muted = isMuted;
-    }
-  }, [isMuted]);
-
-  const toggleMute = () => {
-    const video = videoRef.current;
-    if (video) {
-      const newMuted = !video.muted;
-      video.muted = newMuted;
-      setIsMuted(newMuted);
-    }
-  };
+  const { isInvitationMode } = useConfig();
 
   return (
     <div className="space-y-5 pb-10">
@@ -36,7 +20,7 @@ export default function DetailInfo() {
       <BreakingNews />
       <Bridegroom />
       <LoveStory />
-      <OurDate />
+      {isInvitationMode && <OurDate />}
       <OurGallery />
       <WeddingGiftSection />
       <WishSection />

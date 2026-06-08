@@ -1,7 +1,9 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useState } from "react";
+import { useConfig } from "../../../context/ConfigContext";
 
 export default function WeddingGiftSection() {
   const [showBottomSheet, setShowBottomSheet] = useState(false);
+  const { isInvitationMode } = useConfig();
 
   return (
     <section className="mb-8 text-sm">
@@ -68,12 +70,14 @@ export default function WeddingGiftSection() {
                   </p>
                 </div>
 
-                <div>
-                  <p>
-                    <span className="font-semibold">Gift:</span> Balong,
-                    Sendangrejo, Kec. Ngimbang, Kab. Lamongan, Jawa Timur
-                  </p>
-                </div>
+                {isInvitationMode && (
+                  <div>
+                    <p>
+                      <span className="font-semibold">Gift:</span> Balong,
+                      Sendangrejo, Kec. Ngimbang, Kab. Lamongan, Jawa Timur
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* QRIS Container */}

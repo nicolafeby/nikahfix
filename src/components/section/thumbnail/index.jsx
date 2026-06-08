@@ -1,5 +1,7 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import DetailInfo from "../detail-info";
+import { useConfig } from "../../../context/ConfigContext";
 
 const TagItem = ({ title }) => {
   return (
@@ -10,7 +12,8 @@ const TagItem = ({ title }) => {
 };
 
 export default function Thumbnail() {
-  const [isOpenDetail, setIsOpenDetail] = React.useState(false);
+  const [isOpenDetail, setIsOpenDetail] = useState(false);
+  const { isInvitationMode } = useConfig();
 
   if (isOpenDetail) {
     return <DetailInfo />;
@@ -28,13 +31,15 @@ export default function Thumbnail() {
           <div>
             <h1 className="font-bold text-3xl leading-none">
               Nicola & Anita: <br />
-              Hari Pernikahan Kita
+              {isInvitationMode
+                ? "Hari Pernikahan Kita"
+                : "Kisah Pernikahan Kita"}
             </h1>
           </div>
           <div>
             <div className="flex gap-3 items-center">
               <span className="bg-[#E50913] text-xs text-white rounded-md px-2 py-1">
-                Coming Soon
+                {isInvitationMode ? "Coming Soon" : "Released"}
               </span>
               <p className="text-sm">25 Juni 2025</p>
             </div>

@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getRemoteConfig } from "firebase/remote-config";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -11,7 +12,11 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-console.log("Config check:", firebaseConfig); // ✅ debug
-
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const remoteConfig = getRemoteConfig(app);
+
+remoteConfig.settings.minimumFetchIntervalMillis = 0;
+remoteConfig.defaultConfig = {
+  is_release: true,
+};

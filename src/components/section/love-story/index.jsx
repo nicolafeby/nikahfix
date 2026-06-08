@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import { useConfig } from "../../../context/ConfigContext";
 
 const LoveItem = ({ imageUrl, title, duration, description }) => {
   return (
@@ -28,6 +29,8 @@ const LoveItem = ({ imageUrl, title, duration, description }) => {
 };
 
 export default function LoveStory() {
+  const { isInvitationMode } = useConfig();
+
   return (
     <div>
       <h2 className="text-lg leading-5 text-white font-bold mb-4">
@@ -55,9 +58,17 @@ export default function LoveStory() {
         />
         <LoveItem
           imageUrl="images/final-episode.png"
-          title="[Coming Soon] Final Episode: The Beginning of Forever"
+          title={
+            isInvitationMode
+              ? "[Coming Soon] Final Episode: The Beginning of Forever"
+              : "Final Episode: The Beginning of Forever"
+          }
           duration="26m 10s"
-          description="Ketika hari H itu datang, Nicola dan Anita akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
+          description={
+            isInvitationMode
+              ? "Ketika hari H itu datang, Nicola dan Anita akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
+              : "Hari pernikahan telah menjadi bagian paling hangat dari cerita kami. Kini episode baru dimulai dengan doa agar rumah tangga kami selalu diberi kelancaran."
+          }
         />
       </div>
     </div>

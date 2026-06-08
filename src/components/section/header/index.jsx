@@ -1,8 +1,17 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useConfig } from "../../../context/ConfigContext";
 
 export default function Header() {
   const videoRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(false); // Start unmuted
+  const [isMuted, setIsMuted] = useState(false);
+  const { isInvitationMode } = useConfig();
+
+  const headline = isInvitationMode
+    ? "Hari Pernikahan Kita"
+    : "Kisah Pernikahan Kita";
+  const description = isInvitationMode
+    ? "A story that intertwines love, challenges, and destiny in one journey."
+    : "A story that keeps streaming after the wedding day has passed.";
 
   useEffect(() => {
     if (videoRef.current) {
@@ -36,12 +45,9 @@ export default function Header() {
         <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black via-black/70 to-transparent text-white">
           <h1 className="text-xl font-bold mb-2">
             Nicola &amp; Anita:
-            <br /> Hari Pernikahan Kita
+            <br /> {headline}
           </h1>
-          <p className="text-base">
-            A story that intertwines love, challenges, and destiny in one
-            journey.
-          </p>
+          <p className="text-base">{description}</p>
         </div>
 
         <button

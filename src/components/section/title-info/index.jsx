@@ -1,6 +1,8 @@
-import React from 'react';
+import { useConfig } from "../../../context/ConfigContext";
 
 export default function TitleInfo() {
+  const { isInvitationMode } = useConfig();
+
   return (
     <div className="space-y-1">
       <div className="flex gap-2 items-center">
@@ -9,9 +11,6 @@ export default function TitleInfo() {
           DOCUMENTER
         </span>
       </div>
-      {/* <h2 className="text-lg leading-5 text-white font-bold">
-        Nicola &amp; Anita : Hari Pernikahan Kita
-      </h2> */}
       <div className="flex gap-1 items-center">
         <span className="text-green-500 mr-2">100% match</span>
         <span className="bg-[#4D4D4D] text-white text-xs px-1 py-0 mr-2 rounded-sm">
@@ -27,17 +26,19 @@ export default function TitleInfo() {
         </span>
       </div>
       <div className="bg-[#E50913] py-1 px-2 rounded text-xs text-white font-bold w-fit">
-        Coming soon on Wednesday, 25 Juni 2025
+        {isInvitationMode
+          ? "Coming soon on Wednesday, 25 Juni 2025"
+          : "Released on Wednesday, 25 Juni 2025"}
       </div>
       <div className="pt-2">
         <p className="text-white text-sm leading-[1.15rem] mb-2">
-          Aku dan Kamu akhirnya dipertemukan di waktu yang paling sempurna, bukan karena kebetulan, 
-          tapi karena cinta tahu kapan harus datang. Dan sejak itu, 
-          kita memulai perjalanan menuju masa depan yang kita impikan: menjadi satu dalam pernikahan.
+          {isInvitationMode
+            ? "Aku dan Kamu akhirnya dipertemukan di waktu yang paling sempurna, bukan karena kebetulan, tapi karena cinta tahu kapan harus datang. Dan sejak itu, kita memulai perjalanan menuju masa depan yang kita impikan: menjadi satu dalam pernikahan."
+            : "Hari yang kami nantikan telah selesai dengan penuh syukur. Perjalanan kami kini berlanjut sebagai suami istri, membawa cinta, keluarga, dan doa-doa baik yang menemani langkah kami setelah hari pernikahan."}
         </p>
         <p className="font-bold text-[#AFADA9] text-[10px] leading-[1rem]">
-          "Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat
-          (kebesaran Allah)" (Q.S Az-Zariyah: 49)
+          &quot;Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu
+          mengingat (kebesaran Allah)&quot; (Q.S Az-Zariyah: 49)
         </p>
       </div>
     </div>
