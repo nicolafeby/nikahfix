@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getRemoteConfig } from "firebase/remote-config";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -15,3 +16,9 @@ console.log("Config check:", firebaseConfig); // ✅ debug
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+export const remoteConfig = getRemoteConfig(app);
+
+// Set default values for remote config
+remoteConfig.defaultConfig = {
+  mode: "invitation", // "invitation" or "release"
+};

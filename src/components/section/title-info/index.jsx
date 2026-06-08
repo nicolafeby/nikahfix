@@ -1,6 +1,10 @@
 import React from 'react';
+import { useConfig } from '../../../context/ConfigContext';
 
 export default function TitleInfo() {
+  const { mode } = useConfig();
+  const isRelease = mode === 'release';
+
   return (
     <div className="space-y-1">
       <div className="flex gap-2 items-center">
@@ -27,18 +31,42 @@ export default function TitleInfo() {
         </span>
       </div>
       <div className="bg-[#E50913] py-1 px-2 rounded text-xs text-white font-bold w-fit">
-        Coming soon on Wednesday, 25 Juni 2025
+        {isRelease ? (
+          <span>Syukuran - Wednesday, 25 Juni 2025</span>
+        ) : (
+          <span>Coming soon on Wednesday, 25 Juni 2025</span>
+        )}
       </div>
       <div className="pt-2">
-        <p className="text-white text-sm leading-[1.15rem] mb-2">
-          Aku dan Kamu akhirnya dipertemukan di waktu yang paling sempurna, bukan karena kebetulan, 
-          tapi karena cinta tahu kapan harus datang. Dan sejak itu, 
-          kita memulai perjalanan menuju masa depan yang kita impikan: menjadi satu dalam pernikahan.
-        </p>
-        <p className="font-bold text-[#AFADA9] text-[10px] leading-[1rem]">
-          "Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat
-          (kebesaran Allah)" (Q.S Az-Zariyah: 49)
-        </p>
+        {isRelease ? (
+          <>
+            <p className="text-white text-sm leading-[1.15rem] mb-2">
+              Alhamdulillah! Pernikahan kami telah berlangsung dengan lancar dan penuh berkah. 
+              Kami sangat bersyukur dapat berbagi momen istimewa ini dengan semua orang-orang terkasih.
+            </p>
+            <p className="text-white text-sm leading-[1.15rem] mb-2">
+              Terima kasih atas doa, dukungan, dan kehadiran kalian yang membuat hari spesial kami semakin bermakna. 
+              Semoga perjalanan kami ke depannya terus dirahmati dan diberkahi oleh Allah SWT.
+            </p>
+            <p className="font-bold text-[#AFADA9] text-[10px] leading-[1rem]">
+              "Kami berdoa agar segala hal baik terus menyertai perjalanan hidup kami, 
+              dan semoga kehadiran kalian di hari istimewa kami membawa berkah untuk kita semua." 
+              (dari hati kami yang paling dalam) 💫
+            </p>
+          </>
+        ) : (
+          <>
+            <p className="text-white text-sm leading-[1.15rem] mb-2">
+              Aku dan Kamu akhirnya dipertemukan di waktu yang paling sempurna, bukan karena kebetulan, 
+              tapi karena cinta tahu kapan harus datang. Dan sejak itu, 
+              kita memulai perjalanan menuju masa depan yang kita impikan: menjadi satu dalam pernikahan.
+            </p>
+            <p className="font-bold text-[#AFADA9] text-[10px] leading-[1rem]">
+              "Segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat
+              (kebesaran Allah)" (Q.S Az-Zariyah: 49)
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

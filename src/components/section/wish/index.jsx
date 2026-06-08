@@ -1,6 +1,7 @@
 // src/components/wish/index.jsx
 import React, { useEffect, useState } from "react";
 import { db } from "../../../firebase/config";
+import { useConfig } from "../../../context/ConfigContext";
 import {
   collection,
   addDoc,
@@ -11,6 +12,8 @@ import {
 } from "firebase/firestore";
 
 export default function WishSection() {
+  const { mode } = useConfig();
+  const isRelease = mode === 'release';
   const [wishes, setWishes] = useState([]);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -58,7 +61,7 @@ export default function WishSection() {
       {/* Header dan Tombol Info */}
       <div className="flex items-center  mb-4">
         <h2 className="text-lg leading-5 text-white font-bold">
-          Wish for the Couple
+          {isRelease ? '🤲 Doa dan Restu' : 'Wish for the Couple'}
         </h2>
       </div>
 
@@ -100,10 +103,13 @@ export default function WishSection() {
           />
         </div>
         <div className="space-y-1">
-          <label className="text-white">Message</label>
+          <label className="text-white">
+            {isRelease ? 'Doa & Harapan Terbaik' : 'Message'}
+          </label>
           <textarea
             className="rounded-sm w-full focus:outline-none px-2 py-1 text-black"
             rows={4}
+            placeholder={isRelease ? 'Tuliskan doa dan harapan terbaik untuk kami...' : 'Tuliskan pesan Anda...'}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
@@ -113,7 +119,7 @@ export default function WishSection() {
           type="submit"
           className="w-full py-2 bg-white text-black font-bold rounded-sm"
         >
-          Send
+          {isRelease ? 'Kirim Doa' : 'Send'}
         </button>
       </form>
     </div>

@@ -1,6 +1,31 @@
 import React from "react";
+import { useConfig } from "../../../context/ConfigContext";
 
 export default function OurDate() {
+  const { mode } = useConfig();
+  const isRelease = mode === 'release';
+
+  if (isRelease) {
+    return (
+      <section className="mb-8 text-sm">
+        <h2 className="text-lg leading-5 text-white font-bold mb-4">📅 Hari Istimewa</h2>
+        <div className="space-y-3">
+          <div className="flex flex-col rounded-lg bg-zinc-800 p-4">
+            <div className="text-white text-center space-y-2">
+              <div className="text-2xl font-bold text-red-500">25 Juni 2025</div>
+              <div className="text-sm text-gray-300">Rabu</div>
+              <div className="border-t border-zinc-700 pt-4 mt-4">
+                <p className="text-gray-200 italic">
+                  "Semoga Allah memberkahi perjalanan hidup kami dan segala keputusan yang kami ambil ke depannya" 🤲💫
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="mb-8 text-sm">
       <h2 className="text-lg leading-5 text-white font-bold mb-4">Our Date</h2>

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import { useConfig } from "../../../context/ConfigContext";
 
 export default function BreakingNews() {
   const [showPreview, setShowPreview] = useState(false);
+  const { mode } = useConfig();
+  const isRelease = mode === 'release';
 
   return (
     <div>
       <h2 className="text-lg leading-5 text-white font-bold mb-2">
-        Information
+        {isRelease ? 'Terima Kasih' : 'Information'}
       </h2>
 
       <img
@@ -18,23 +21,45 @@ export default function BreakingNews() {
       />
 
       <div className="text-[#AFADA9] text-sm leading-[1.15rem] mt-2">
-        <p>
-          Hai! Kalian adalah bagian berharga dalam hidup kami, dan dengan
-          bahagia kami ingin membagikan kabar bahwa kami akan segera
-          melangsungkan pernikahan! ❤️
-        </p>
-        <p className="mt-2">
-          Dengan penuh sukacita, kami mengundang teman-teman dan kerabat semua
-          untuk hadir di hari bahagia kami. Pernikahan kami akan dirayakan
-          secara sederhana dan penuh kehangatan di Lamongan, bersama keluarga
-          serta orang-orang terdekat..
-        </p>
-        <p className="mt-2">
-          Meski begitu, kami sangat mengharapkan doa terbaik agar pernikahan
-          kami berjalan lancar dan kehidupan setelahnya dipenuhi kebahagiaan.
-        </p>
-        <p className="mt-2">Dengan penuh cinta,</p>
-        <p>❤️ The bride and groom ❤️</p>
+        {isRelease ? (
+          <>
+            <p>
+              Alhamdulillah, pernikahan kami telah terlaksana dengan lancar dan penuh berkah! 
+              Kami sangat bersyukur kepada Allah SWT atas segala nikmat dan karunia yang telah diberikan.
+            </p>
+            <p className="mt-2">
+              Terima kasih yang sebesar-besarnya kepada semua keluarga, sahabat, dan orang-orang 
+              terkasih yang telah menghadiri, mendoakan, dan memberikan dukungan luar biasa untuk kami.
+            </p>
+            <p className="mt-2">
+              Kami sangat menghargai setiap doa dan kehadiran kalian di hari istimewa kami. 
+              Semoga Allah memberikan keberkahan untuk kita semua dan membimbing kami dalam menjalani 
+              kehidupan berumah tangga yang penuh dengan cinta, kasih sayang, dan kepatuhan kepada Allah.
+            </p>
+            <p className="mt-2">Dengan penuh rasa syukur dan cinta,</p>
+            <p>💫 The bride and groom 💫</p>
+          </>
+        ) : (
+          <>
+            <p>
+              Hai! Kalian adalah bagian berharga dalam hidup kami, dan dengan
+              bahagia kami ingin membagikan kabar bahwa kami akan segera
+              melangsungkan pernikahan! ❤️
+            </p>
+            <p className="mt-2">
+              Dengan penuh sukacita, kami mengundang teman-teman dan kerabat semua
+              untuk hadir di hari bahagia kami. Pernikahan kami akan dirayakan
+              secara sederhana dan penuh kehangatan di Lamongan, bersama keluarga
+              serta orang-orang terdekat..
+            </p>
+            <p className="mt-2">
+              Meski begitu, kami sangat mengharapkan doa terbaik agar pernikahan
+              kami berjalan lancar dan kehidupan setelahnya dipenuhi kebahagiaan.
+            </p>
+            <p className="mt-2">Dengan penuh cinta,</p>
+            <p>❤️ The bride and groom ❤️</p>
+          </>
+        )}
       </div>
 
       {/* Modal Preview */}
